@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10</title>
+    <link rel="icon" href="image/bookmark.png"/>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <!-- ---- -->
+
+    <!-- css files -->
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <!-- --------- -->
+
+    <!-- my css files -->
+    <link rel="stylesheet" href="Css/style.css">
+    <!-- ------------ -->
+</head>
+
+<body>
+    
+    <section class="part-1 mb-5 mt-5">
+        <div class="container">
+            <h1 class="mx-auto mt-3">Bookmarker</h1>
+        </div>
+    </section>
+
+    <div class="dot-border w-75 mx-auto mt-2"></div>
+
+    <section class="part-2">
+        <h1 class="fs-4 mt-5 mx-auto"><i class="fa-solid fa-bookmark me-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark ms-1"></i></h1>
+    </section>
+
+    <section class="inputs w-75 mx-auto mt-5 mb-4">
+        <label for="siteName" class="fw-bold"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+        <input type="text" id="siteName" placeholder="Bookmark Name" class="form-control mt-2 fw-semibold mb-3">
+
+        <div class="alert alert-danger d-none" id="nameAlert" role="alert">
+            Site Name invalid!!!!!
+        </div>
+
+        <label for="siteUrl" class="fw-bold"><i class="fa-solid fa-link pe-2 mt-4"></i>Site URL</label>
+        <input type="text" id="siteUrl" placeholder="Website URL" class="form-control mt-2 fw-semibold mb-3">
+
+        <div class="alert alert-danger d-none" id="urlAlert" role="alert">
+            Site Url invalid!!!!!
+        </div>
+    
+        <button class="btn btn-danger px-5 border-1 mt-3" onclick="main()">Submit</button>
+    </section>
+
+    <div class="dot-border w-75 mx-auto mt-2"></div>
+
+    <section class="data-table w-75 mt-4 mx-auto">
+        <div class="container-fluid">
+            <table class="table">
+                <thead>
+                    <tr class="text-center">
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+
+                <tbody id="displayOutput">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- js files -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- -------- -->
+
+    <!-- my js files -->
+    <script src="JS/code.js"></script>
+    <!-- ----------- -->
+</body>
+</html>
